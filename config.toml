@@ -6,11 +6,11 @@ build-mindetach-module = true
 # see https://github.com/j-hc/revanced-magisk-module/blob/main/CONFIG.md for more detailed explanations
 
 [YouTube]
-build-mode = "both"                                                   # 'both', 'apk' or 'module'
-excluded-patches = ""                                                 # space-seperated patches to exclude (multiline strings are not supported)
-included-patches = ""                                                 # space-seperated patches to include (non-excluded patches are included by default)
-version = "auto"                                                      # 'auto', 'latest', 'beta' or a custom one like '17.40.41'
-exclusive-patches = false                                             # excludes all patches by default and only applies included-patches
+build-mode = "both"                                                                                                                       # 'both', 'apk' or 'module'
+excluded-patches = "custom-branding external-downloads hide-artist-card hide-album-cards comments always-autorepeat hide-autoplay-button" # space-seperated patches to exclude (multiline strings are not supported)
+included-patches = ""                                                                                                                     # space-seperated patches to include (non-excluded patches are included by default)
+version = "auto"                                                                                                                          # 'auto', 'latest', 'beta' or a custom one like '17.40.41'
+exclusive-patches = false                                                                                                                 # excludes all patches by default and only applies included-patches
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
 module-prop-name = "ytrv-magisk"
 
@@ -42,13 +42,13 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music/"
 arch = "both"
 
 [Twitter]
-build-mode = "apk"
+build-mode = "both"
 excluded-patches = "hide-views-stats"
 version = "auto"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/twitter-inc/twitter/"
 
 [Twitch]
-build-mode = "apk"
+build-mode = "both"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/twitch-interactive-inc/twitch/"
 
 [TikTok]
@@ -80,7 +80,7 @@ enabled = false
 apkmirror-dlurl = "https://www.apkmirror.com/apk/deutscher-wetterdienst/warnwetter/"
 
 [Windyapp]
-enabled = false
+enabled = true
 apkmirror-dlurl = "https://www.apkmirror.com/apk/windy-weather-world-inc/windy-wind-weather-forecast/"
 
 [IconPackStudio]
@@ -97,5 +97,5 @@ enabled = false
 apkmirror-dlurl = "https://www.apkmirror.com/apk/joaomgcd/tasker/"
 
 [Photomath]
-enabled = false
+enabled = true
 apkmonk-dlurl = "https://www.apkmonk.com/app/com.microblink.photomath/"
